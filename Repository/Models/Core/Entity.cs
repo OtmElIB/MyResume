@@ -1,7 +1,7 @@
-﻿using Repository.Repositories.Interfaces;
+﻿using Repository.Repositories.Interfaces.Core;
 using System;
 
-namespace Repository.Repositories.Core
+namespace Repository.Models.Core
 {
     /// <summary>
     /// Représente l'entité de base

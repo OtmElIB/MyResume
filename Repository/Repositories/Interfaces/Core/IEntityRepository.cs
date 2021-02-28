@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Repository.Repositories.Interfaces
+namespace Repository.Repositories.Interfaces.Core
 {
     /// <summary>
     /// Définit l'ensemble des méthodes CRUD (Create, Read, Update, Delete) permetant d'accéder aux données stockées dans une base.

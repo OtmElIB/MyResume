@@ -1,4 +1,4 @@
-﻿namespace Repository.Repositories.Interfaces
+﻿namespace Repository.Repositories.Interfaces.Core
 {
     /// <summary>
     /// Définit une entité horodatable

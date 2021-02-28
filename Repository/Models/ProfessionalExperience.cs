@@ -1,4 +1,4 @@
-﻿using Repository.Repositories.Core;
+﻿using Repository.Models.Core;
 using System;
 
 namespace Repository.Models
