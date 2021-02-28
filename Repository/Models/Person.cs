@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Repository.Repositories.User
+namespace Repository.Models
 {
-    class ProfessionalExperience
+    class Person
     {
     }
 }
