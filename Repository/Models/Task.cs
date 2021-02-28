@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Repository.Repositories.Core;
 
 namespace Repository.Models
 {
-    class Task
+    public class Task : Entity<long>
     {
+        public string Title { get; set; }
     }
 }

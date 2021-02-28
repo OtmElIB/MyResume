@@ -2,10 +2,8 @@
 
 namespace Repository.Models
 {
-    public class Language : Entity<long>
+    public class Technologies : Entity<long>
     {
         public string Title { get; set; }
-
-        public int Score { get; set; }
     }
 }

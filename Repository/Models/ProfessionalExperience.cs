@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Repository.Repositories.Core;
+using System;
 
 namespace Repository.Models
 {
-    class ProfessionalExperience
+    public class ProfessionalExperience : Entity<long>
     {
+        public string CompanyName { get; set; }
+        public string Title { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
     }
 }

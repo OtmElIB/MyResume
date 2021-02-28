@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Repository.Repositories.Core;
 
 namespace Repository.Models
 {
-    class Link
+    public class Link : Entity<long>
     {
+        public string Url { get; set; }
     }
 }
