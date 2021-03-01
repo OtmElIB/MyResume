@@ -63,6 +63,7 @@ namespace Repository
             modelBuilder.Entity<Link>().HasKey(x => x.ID);
             modelBuilder.Entity<Link>().Property(x => x.ID).ValueGeneratedOnAdd();
 
+            modelBuilder.Entity<Link>().Property(x => x.Title).IsRequired();
             modelBuilder.Entity<Link>().Property(x => x.Url).IsRequired();
             modelBuilder.Entity<Link>().Property(x => x.CreationDate).IsRequired().HasDefaultValue(DateTime.Now);
         }
