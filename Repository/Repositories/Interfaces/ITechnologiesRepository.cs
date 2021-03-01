@@ -3,7 +3,7 @@ using Repository.Repositories.Interfaces.Core;
 
 namespace Repository.Repositories.Interfaces
 {
-    public interface ITechnologiesRepository : IEntityRepository<Technologies, long>
+    public interface ITechnologiesRepository : IEntityRepository<Technology, long>
     {
     }
 }

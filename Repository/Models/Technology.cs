@@ -2,7 +2,7 @@
 
 namespace Repository.Models
 {
-    public class Technologies : Entity<long>
+    public class Technology : Entity<long>
     {
         public string Title { get; set; }
         public long? ProfessionalExperienceID { get; set; }

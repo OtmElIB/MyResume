@@ -12,7 +12,7 @@ namespace Repository.Models
         public DateTime EndDate { get; set; }
         public long? PersonID { get; set; }
         public Person Person { get; set; }
-        public Collection<Technologies> Technologies { get; set; }
+        public Collection<Technology> Technologies { get; set; }
         public Collection<Task> Tasks { get; set; }
         public long? TypeID { get; set; }
         public PEType Type { get; set; }

@@ -4,7 +4,7 @@ using Repository.Repositories.Interfaces;
 
 namespace Repository.Repositories.Implementations
 {
-    public class TechnologiesRepository : ApplicationRepositoty<Technologies, long>, ITechnologiesRepository
+    public class TechnologiesRepository : ApplicationRepositoty<Technology, long>, ITechnologiesRepository
     {
         /// <summary>
         /// Initialise une nouvelle instance de <see cref="TechnologiesRepository"/>.
