@@ -4,7 +4,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Repository.Extentions
 {
@@ -99,6 +98,52 @@ namespace Repository.Extentions
                     new Technology { ID = 33, Title = "Application Insights" },
                     new Technology { ID = 34, Title = "PostMan" },
                     new Technology { ID = 34, Title = "Angular 5" }
+            );
+
+            // Task
+            modelBuilder.Entity<Task>()
+                .HasData(
+                    new Task { ID = 1, Title = "Migration de l'application web Massar de Silverlight vers Asp.Net MVC 5." },
+                    new Task { ID = 2, Title = "Evolution des services utilisés par l'application Massar" },
+                    new Task { ID = 3, Title = "Amélioration des performances (time processing, bug fixes et utilisation d'Api externes pour une meilleure user experience)" },
+                    new Task { ID = 4, Title = "Développement de nouvelles fonctionnalités" },
+                    new Task { ID = 5, Title = "Archivage et Shelve et Code Reviewsous TFS" },
+                    new Task { ID = 6, Title = "Maintenance et évolution des services utilisés par les applications Cdiscount" },
+                    new Task { ID = 7, Title = "Développement des nouvelles fonctionnalités sur les différents sites: Cdiscount Market Place,Seller Zone,Esus,GoSport,Cdiscount Pro" },
+                    new Task { ID = 8, Title = "Optimisation des performances" },
+                    new Task { ID = 9, Title = "Analyse et correction des bugs sur les différents sites" },
+                    new Task { ID = 10, Title = "Développement, tests unitaires et tests d'intégration" },
+                    new Task { ID = 11, Title = "Archivage, shelve, merge et Code Reviewsous TFS" },
+                    new Task { ID = 12, Title = "Développement des nouvelles fonctionnalités et maintenance des applications(l’Api et l’Espace partenaire) au sain de l’équipe cœur du métier de Smoney" },
+                    new Task { ID = 13, Title = "Analyse et correction desbugssurlesdifférentes applications" },
+                    new Task { ID = 14, Title = "AsDéveloppement de la nouvelle version de l’espace partenaire" },
+                    new Task { ID = 15, Title = "Conception, architecture etréalisation de la nouvelle application quisert de parcours d’inscription" },
+                    new Task { ID = 16, Title = "Développement destests unitaires surl’application" },
+                    new Task { ID = 17, Title = "Intégration continue via Azure DevOps" },
+                    new Task { ID = 18, Title = "Déploiement des applications et des différentes release su différents serveurs" },
+                    new Task { ID = 19, Title = "Refonte complète de la boutique normes (FrontOffice) qui sert à acheter et vendre ces dernières en utilisant la méthode Agile." },
+                    new Task { ID = 20, Title = "Validation et pesage des Uses Story avec l’équipe PO" },
+                    new Task { ID = 21, Title = "Développement des tests unitaires et fonctionnels " },
+                    new Task { ID = 22, Title = "Front End : intégration des maquettes développées par l’intégrateur" },
+                    new Task { ID = 23, Title = "Mise en place des architectures applicative du front office et back office" },
+                    new Task { ID = 24, Title = "Développements de la partie parcours d’achats et l’espace personnel du site et paiement CB(ATOS)" },
+                    new Task { ID = 25, Title = "Participation au développements du nouveau Framework qui sera par la suite utilisé par le reste des équipes" },
+                    new Task { ID = 26, Title = "Création de micro services pour chaque application tier" },
+                    new Task { ID = 27, Title = "Déploiement et intégration continue via Azure DevOps" }
+            );
+
+            modelBuilder.Entity<Person>()
+                .HasData(
+                   new Person { ID = 1, Name = "El Ibaoui Otmane", PhoneNumber = "0659058512", Email = "otmelib@gmail.com", Address = "52 rue gambetta, Levallois Perret 92300", Title = "Consultant Microsoft .Net/.Net Core / C#" }
+            );
+
+            // Proffessional Experience
+            modelBuilder.Entity<ProfessionalExperience>()
+                .HasData(
+                   new ProfessionalExperience { ID = 1, CompanyName = "MNE", Title = "Consultant .Net Framework MVC/C# " },
+                   new ProfessionalExperience { ID = 2, CompanyName = "CDsicount", Title = "Consultant FullStack .Net Framework" },
+                   new ProfessionalExperience { ID = 3, CompanyName = "SMoney", Title = "Consultant FullStack .Net Framework" },
+                   new ProfessionalExperience { ID = 4, CompanyName = "AFNOR", Title = "Consultant FullStack .Net Core" }
             );
         }
     }

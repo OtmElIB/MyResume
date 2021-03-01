@@ -119,7 +119,7 @@ namespace Repository
             modelBuilder.Entity<ProfessionalExperience>().Property(x => x.EndDate).IsRequired();
             modelBuilder.Entity<ProfessionalExperience>().Property(x => x.CreationDate).IsRequired().HasDefaultValue(DateTime.Now);
 
-            modelBuilder.Entity<ProfessionalExperience>().HasMany(c => c.Technologies).WithOne(e => e.ProfessionalExperience).IsRequired();
+            modelBuilder.Entity<ProfessionalExperience>().HasMany(c => c.Technologies).WithMany(e => e.ProfessionalExperiences);
             modelBuilder.Entity<ProfessionalExperience>().HasMany(c => c.Tasks).WithOne(e => e.ProfessionalExperience).IsRequired();
         }
 
@@ -130,6 +130,8 @@ namespace Repository
 
             modelBuilder.Entity<Technology>().Property(x => x.Title).IsRequired();
             modelBuilder.Entity<Technology>().Property(x => x.CreationDate).IsRequired().HasDefaultValue(DateTime.Now);
+
+            modelBuilder.Entity<Technology>().HasMany(c => c.ProfessionalExperiences).WithMany(e => e.Technologies);
         }
 
         private void Task(ModelBuilder modelBuilder)
