@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Repository.Extentions;
 using Repository.Models;
 using System;
 
@@ -33,6 +34,8 @@ namespace Repository
             Task(modelBuilder);
             Technology(modelBuilder);
             Training(modelBuilder);
+
+            // modelBuilder.Seed();
         }
 
         private void Person(ModelBuilder modelBuilder)
