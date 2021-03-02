@@ -13,5 +13,7 @@ namespace ResumeMvc.ViewModels
         public long? TypeID { get; set; }
         public PETypeViewModel Type { get; set; }
         public List<TaskViewModel> Tasks { get; set; }
+
+        public List<TechnologyViewModel> Technologies { get; set; }
     }
 }
