@@ -9,6 +9,8 @@ namespace Repository.Models
 
         public string Url { get; set; }
 
+        public string SocialMediaIcon { get; set; }
+
         public long? PersonID { get; set; }
         [JsonIgnore]
         public Person Person { get; set; }

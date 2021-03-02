@@ -67,6 +67,7 @@ namespace Repository
 
             modelBuilder.Entity<Link>().Property(x => x.Title).IsRequired();
             modelBuilder.Entity<Link>().Property(x => x.Url).IsRequired();
+            modelBuilder.Entity<Link>().Property(x => x.SocialMediaIcon).IsRequired();
             modelBuilder.Entity<Link>().Property(x => x.CreationDate).IsRequired().HasDefaultValue(DateTime.Now);
         }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ResumeMvc.ViewModels
 {
@@ -11,5 +12,6 @@ namespace ResumeMvc.ViewModels
         public DateTime EndDate { get; set; }
         public long? TypeID { get; set; }
         public PETypeViewModel Type { get; set; }
+        public List<TaskViewModel> Tasks { get; set; }
     }
 }

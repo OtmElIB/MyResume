@@ -25,6 +25,8 @@ namespace ResumeMvc.Mapping
             CreateMap<Task, TaskViewModel>();
 
             CreateMap<Technology, TechnologyViewModel>();
+
+            CreateMap<Language, LanguageViewModel>();
         }
     }
 }
