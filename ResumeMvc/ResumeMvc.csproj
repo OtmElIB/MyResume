@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\css\aos.css" />
+    <Content Remove="wwwroot\css\bootstrap.min.css" />
+    <Content Remove="wwwroot\css\main.css" />
+    <Content Remove="wwwroot\js\core\bootstrap.min.js" />
+    <Content Remove="wwwroot\js\core\jquery.3.2.1.min.js" />
+    <Content Remove="wwwroot\js\core\popper.min.js" />
+    <Content Remove="wwwroot\js\plugins\bootstrap-datepicker.js" />
+    <Content Remove="wwwroot\js\plugins\bootstrap-switch.js" />
+    <Content Remove="wwwroot\js\plugins\jquery.sharrre.js" />
+    <Content Remove="wwwroot\js\plugins\nouislider.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\aos.css" />
+    <None Include="wwwroot\css\bootstrap.min.css" />
+    <None Include="wwwroot\css\main.css" />
+    <None Include="wwwroot\js\core\bootstrap.min.js" />
+    <None Include="wwwroot\js\core\jquery.3.2.1.min.js" />
+    <None Include="wwwroot\js\core\popper.min.js" />
+    <None Include="wwwroot\js\plugins\bootstrap-datepicker.js" />
+    <None Include="wwwroot\js\plugins\bootstrap-switch.js" />
+    <None Include="wwwroot\js\plugins\jquery.sharrre.js" />
+    <None Include="wwwroot\js\plugins\nouislider.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj" />
+    <ProjectReference Include="..\Repository\Repository.csproj" />
+  </ItemGroup>
+
+</Project>

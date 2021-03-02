@@ -1,0 +1,46 @@
+﻿@model ResumeMvc.ViewModels.PersonViewModel
+
+<div class="profile-page">
+    <div class="wrapper">
+        <div class="page-header page-header-small" filter-color="green">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg')"></div>
+            <div class="container">
+                <div class="content-center">
+                    <div class="cc-profile-image"><a href="#"><img src="~/Images/cv.png" alt="Image" /></a></div>
+                    <div class="h2 title">@Model.Name</div>
+                    <p class="category text-white">@Model.Title</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Download CV</a>
+                </div>
+            </div>
+
+            @(await Component.InvokeAsync("Links", Model.ID))
+            
+        </div>
+    </div>
+</div>
+<div class="section" id="about">
+    <div class="container">
+        <div class="card" data-aos="fade-up" data-aos-offset="10">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card-body">
+                        <div class="h4 mt-0 title">Basic Information</div>
+                        
+                        <div class="row mt-3">
+                            <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
+                            <div class="col-sm-8">@Model.Email</div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-sm-4"><strong class="text-uppercase">Phone:</strong></div>
+                            <div class="col-sm-8">@Model.PhoneNumber</div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-sm-4"><strong class="text-uppercase">Address:</strong></div>
+                            <div class="col-sm-8">@Model.Address</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

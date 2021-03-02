@@ -1,0 +1,28 @@
+﻿@model ResumeMvc.ViewModels.PersonViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="page-content">
+    <div>
+
+        @(await Component.InvokeAsync("PersonalInformations", Model))
+
+        
+        @(await Component.InvokeAsync("Skills", Model.ID))
+
+
+        @(await Component.InvokeAsync("Languages", Model.ID))
+
+
+        @(await Component.InvokeAsync("Trainings", Model.ID))
+
+
+        @(await Component.InvokeAsync("Distinctions", Model.ID))
+
+
+        @(await Component.InvokeAsync("ProfessionalExperiences", Model.ID))
+
+        
+    </div>
+</div>
