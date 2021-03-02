@@ -13,7 +13,7 @@ namespace MyResume.Extentions
             services.AddScoped<IPersonRepository, PersonRepository>();
             services.AddScoped<ILinkRepository, LinkRepository>();
             services.AddScoped<ISkillRepository, SkillRepository>();
-            services.AddScoped<ILanguageRepository, ILanguageRepository>();
+            services.AddScoped<ILanguageRepository, LanguageRepository>();
             services.AddScoped<ITrainingRepository, TrainingRepository>();
             services.AddScoped<IDistinctionRepository, DistinctionRepository>();
             services.AddScoped<IProfessionalExperienceRepository, ProfessionalExperienceRepository>();

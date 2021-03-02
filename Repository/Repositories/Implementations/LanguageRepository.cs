@@ -4,7 +4,7 @@ using Repository.Repositories.Interfaces;
 
 namespace Repository.Repositories.Implementations
 {
-    class LanguageRepository : ApplicationRepositoty<Language, long>, ILanguageRepository
+    public class LanguageRepository : ApplicationRepositoty<Language, long>, ILanguageRepository
     {
         /// <summary>
         /// Initialise une nouvelle instance de <see cref="LanguageRepository"/>.

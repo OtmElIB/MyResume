@@ -1,4 +1,5 @@
 ﻿using Repository.Models.Core;
+using System.Text.Json.Serialization;
 
 namespace Repository.Models
 {
@@ -10,6 +11,7 @@ namespace Repository.Models
 
         public long? PersonID { get; set; }
 
+        [JsonIgnore]
         public Person Person { get; set; }
     }
 }
