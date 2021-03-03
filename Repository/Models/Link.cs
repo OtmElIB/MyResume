@@ -1,8 +1,10 @@
 ﻿using Repository.Models.Core;
-using System.Text.Json.Serialization;
 
 namespace Repository.Models
 {
+    /// <summary>
+    /// Link Entity
+    /// </summary>
     public class Link : Entity<long>
     {
         public string Title { get; set; }
@@ -12,7 +14,7 @@ namespace Repository.Models
         public string SocialMediaIcon { get; set; }
 
         public long? PersonID { get; set; }
-        [JsonIgnore]
+
         public Person Person { get; set; }
     }
 }

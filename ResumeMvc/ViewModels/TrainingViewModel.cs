@@ -1,5 +1,8 @@
 ﻿namespace ResumeMvc.ViewModels
 {
+    /// <summary>
+    /// TrainingViewModel Objet Utilisé dans les Views
+    /// </summary>
     public class TrainingViewModel
     {
         public long ID { get; set; }

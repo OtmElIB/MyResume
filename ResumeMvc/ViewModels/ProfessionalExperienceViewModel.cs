@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace ResumeMvc.ViewModels
 {
+    /// <summary>
+    /// ProfessionalExperienceViewModel Objet Utilisé dans les Views
+    /// </summary>
     public class ProfessionalExperienceViewModel
     {
         public long ID { get; set; }

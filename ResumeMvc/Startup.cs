@@ -33,8 +33,6 @@ namespace ResumeMvc
 
             services.AddRazorPages();
 
-            // services.AddControllersWithViews().AddRazorRuntimeCompilation();
-
             services.AddServices();
             services.AddRepositories();
 
@@ -67,14 +65,7 @@ namespace ResumeMvc
                 );
             });
 
-            // app.UseRouting();
-
             app.UseAuthorization();
-
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapRazorPages();
-            //});
         }
     }
 }

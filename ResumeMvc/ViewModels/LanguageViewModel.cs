@@ -1,5 +1,8 @@
 ﻿namespace ResumeMvc.ViewModels
 {
+    /// <summary>
+    /// LanguageViewModel Objet Utilisé dans les Views
+    /// </summary>
     public class LanguageViewModel
     {
         public long ID { get; set; }

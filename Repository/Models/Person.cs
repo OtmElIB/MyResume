@@ -3,6 +3,9 @@ using System.Collections.ObjectModel;
 
 namespace Repository.Models
 {
+    /// <summary>
+    /// Person Entity
+    /// </summary>
     public class Person : Entity<long>
     {
         public string Name { get; set; }

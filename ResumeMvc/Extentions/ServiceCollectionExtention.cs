@@ -6,8 +6,15 @@ using Repository.Repositories.Interfaces;
 
 namespace ResumeMvc.Extentions
 {
+    /// <summary>
+    /// ServiceCollection Extention pour regrouper la partie injection de dependances
+    /// </summary>
     public static class ServiceCollectionExtention
     {
+        /// <summary>
+        /// Injection des reposirories
+        /// </summary>
+        /// <param name="services"></param>
         public static void AddRepositories(this IServiceCollection services)
         {
             services.AddScoped<IPersonRepository, PersonRepository>();
@@ -22,6 +29,10 @@ namespace ResumeMvc.Extentions
             services.AddScoped<ITechnologiesRepository, TechnologiesRepository>();
         }
 
+        /// <summary>
+        /// Injection des services
+        /// </summary>
+        /// <param name="services"></param>
         public static void AddServices(this IServiceCollection services)
         {
             services.AddScoped<IPersonService, PersonService>();

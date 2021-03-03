@@ -1,5 +1,8 @@
 ﻿namespace ResumeMvc.ViewModels
 {
+    /// <summary>
+    /// LinkViewModel Objet Utilisé dans les Views
+    /// </summary>
     public class LinkViewModel
     {
         public long ID { get; set; }

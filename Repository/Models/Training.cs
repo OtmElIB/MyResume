@@ -1,8 +1,10 @@
 ﻿using Repository.Models.Core;
-using System.Text.Json.Serialization;
 
 namespace Repository.Models
 {
+    /// <summary>
+    /// Training Entity
+    /// </summary>
     public class Training : Entity<long>
     {
         public string SchoolName { get; set; }
@@ -13,7 +15,6 @@ namespace Repository.Models
 
         public long? PersonID { get; set; }
 
-        [JsonIgnore]
         public Person Person { get; set; }
     }
 }

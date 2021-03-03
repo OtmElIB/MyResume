@@ -4,6 +4,9 @@ using ResumeMvc.ViewModels;
 
 namespace ResumeMvc.Mapping
 {
+    /// <summary>
+    /// AutoMapper Profile Pour Mapper les entities vers des ViewModels
+    /// </summary>
     public class AutoMapperProfile : Profile
     {
         public AutoMapperProfile()
