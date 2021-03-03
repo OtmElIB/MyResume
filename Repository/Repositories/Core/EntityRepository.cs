@@ -195,7 +195,11 @@ namespace Repository.Repositories.Core
         #endregion
 
         #region Read
-        
+
+        public virtual TEntity ReadFirst()
+        {
+            return this.Include().FirstOrDefault();
+        }
 
         public virtual TEntity Read(TKey key)
         {

@@ -20,6 +20,8 @@ namespace Repository.Repositories.Interfaces.Core
 
         Task<int> CreateAsync(IEnumerable<TEntity> entities);
 
+        TEntity ReadFirst();
+
         TEntity Read(TKey key);
 
         List<TEntity> Read(params TKey[] keys);

@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Business.Core
@@ -314,6 +313,29 @@ namespace Business.Core
             }
 
             return actionResponse;
+        }
+
+        /// <summary>
+        /// Obtient le premeier element de TEntity
+        /// </summary>
+        /// <returns>
+        /// TEntity
+        /// </returns>
+        public virtual IActionResponse<TEntity> FirstOrDefault()
+        {
+            IActionResponse<TEntity> actionResponse;
+
+            try
+            {
+                actionResponse = this.Ok(this.Repository.ReadFirst());
+            }
+            catch (Exception e)
+            {
+                actionResponse = this.InternalServerError<TEntity>(e);
+            }
+
+            return actionResponse;
+
         }
 
         /// <summary>

@@ -19,7 +19,7 @@ namespace ResumeMvc.Controllers
         [HttpGet]
         public ActionResult Index()
         {
-            var response = _personService.FirstOrDefault(x => x.Name == "El Ibaoui Otmane");
+            var response = _personService.FirstOrDefault();
 
             if (response.IsSuccess)
             {

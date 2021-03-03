@@ -44,6 +44,8 @@ namespace Business.Core
 
         Task<IActionResponse> DeleteAsync();
 
+        IActionResponse<TEntity> FirstOrDefault();
+
         IActionResponse<TEntity> FirstOrDefault(Expression<Func<TEntity, bool>> predicate);
 
         IActionResponse<List<TEntity>> Where(Expression<Func<TEntity, bool>> predicate);
