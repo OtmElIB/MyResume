@@ -17,8 +17,8 @@ namespace Repository.Extentions
                    new Person
                    {
                        ID = 1,
-                       Name = "El Ibaoui Otmane",
-                       PhoneNumber = "0659058512",
+                       Name = "Otm El IB",
+                       PhoneNumber = "0659000012",
                        Email = "otmelib@gmail.com",
                        Address = "52 rue gambetta, Levallois Perret 92300",
                        Title = "Consultant Microsoft .Net/.Net Core / C#"
